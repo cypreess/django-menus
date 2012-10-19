@@ -12,7 +12,9 @@ setup(
     author_email = "cypreess@gmail.com",
     description = ("Django menuing system"),
     license = "MIT",
-    packages = ['menus',],
+    packages = [    'menus',
+                    'menus.templatetags',
+    ],
     install_requires = [
                         'django>=1.1',
                         ],
