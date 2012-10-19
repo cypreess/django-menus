@@ -24,8 +24,28 @@ it can be easily provided to menu declaration::
 
         ]
 
+.. note::
+
+    Attribute ``match`` can be omitted in most cases. It defaults to `` r'^'+ url + r'$',``. This is extremely helpful
+    in simple cases where exact match is what you want for menu element selection.
+
+
+
+
 Internationalization
 --------------------
 
-django-menus support internationalization using ``ugettext``.
+django-menus support internationalization using django ``ugettext``.
 
+::
+
+    from django.utils.translation import ugettext_lazy as _
+
+    def menu(context, variables):
+        return [
+           {   'name' : _('News'),
+               'class' : 'news_menu_item',
+               'url' : reverse('news'),
+           },
+
+        ]

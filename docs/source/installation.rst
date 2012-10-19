@@ -4,13 +4,10 @@ Installation
 Getting a module
 ----------------
 
-Grab a python module from pypi or source repository::
+Grab it from source repository::
 
-    pip install django-menus
 
-or::
-
-    pip install -r hg+https://bitbucket.org/cypreess/django-menus#egg=menus
+    pip install -r git+git://github.com/cypreess/django-menus.git#egg=django-menus
 
 
 ``MENUS_CONF`` setting
