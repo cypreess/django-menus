@@ -7,7 +7,7 @@ def read(fname):
     
 setup(
     name = "menus",
-    version = "0.0.1",
+    version = "1.0",
     author = "Krzysztof Dorosz",
     author_email = "cypreess@gmail.com",
     description = ("Django menuing system"),
