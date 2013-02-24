@@ -15,7 +15,4 @@ setup(
     packages = [    'menus',
                     'menus.templatetags',
     ],
-    install_requires = [
-                        'django>=1.1',
-                        ],
 )
